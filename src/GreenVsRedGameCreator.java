@@ -16,7 +16,7 @@ public class GreenVsRedGameCreator extends GridCreator {
         int result = 0;
         int[][] secondMatrix = new int[matrix[0].length][matrix[0].length];
         result = getResultForAllGenerations(targetRow, targetCol, numberN, green, result, secondMatrix);
-        this.printer.print(String.valueOf(result));
+        this.printer.print("Result is: " + result);
     }
 
     protected void fillMatrix(int[][] matrix, InputReader inputReader) {
